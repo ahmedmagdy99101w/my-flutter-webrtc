@@ -180,4 +180,6 @@ class RTCVideoPlatformViewController extends ValueNotifier<RTCVideoValue>
     }
     return true;
   }
+
+  RTCVideoValue get videoValue => value; // Fix for webrtc_interface: 1.2.3
 }
