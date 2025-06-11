@@ -326,4 +326,6 @@ class RTCVideoRenderer extends ValueNotifier<RTCVideoValue>
 
   @override
   Function? onFirstFrameRendered;
+
+  RTCVideoValue get videoValue => value; // Fix for webrtc_interface: 1.2.3
 }
