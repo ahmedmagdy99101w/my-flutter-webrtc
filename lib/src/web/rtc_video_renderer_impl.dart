@@ -7,7 +7,6 @@ import 'package:flutter/services.dart';
 
 import 'package:dart_webrtc/dart_webrtc.dart';
 import 'package:web/web.dart' as web;
-import 'package:webrtc_interface/webrtc_interface.dart';
 
 // An error code value to error name Map.
 // See: https://developer.mozilla.org/en-US/docs/Web/API/MediaError/code
@@ -327,6 +326,4 @@ class RTCVideoRenderer extends ValueNotifier<RTCVideoValue>
 
   @override
   Function? onFirstFrameRendered;
-
-  RTCVideoValue get videoValue => value; // Fix for webrtc_interface: 1.2.3
 }
